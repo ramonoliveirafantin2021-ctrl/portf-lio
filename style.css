@@ -1,0 +1,144 @@
+#BarraTopo {
+  background-color: #2b2b2b;
+  color: white;
+  text-align: center;
+  height: 100px;
+  padding: 35px;
+  font-size: 25px;
+  position: fixed;
+  z-index: 1000px;
+  margin-top: -100px;
+  width: 100%;
+}
+
+#BarraTopo button {
+  padding: 20px 20px;
+  border-radius: 70px;
+  font-size: 20px;
+  border: none;
+  background-color: #2b2b2b;
+  color: white;
+}
+
+#BarraTopo button :hover {
+  background-color: darkgrey;
+  border-radius: 20px;
+  padding: 20px;
+  transition: 0.3s;
+  transform: 0.3s;
+}
+
+#SecaoUm {
+  margin-top: 100px;
+}
+
+#SecaoUm img {
+  width: 200px;
+}
+
+#SecaoUm img:hover {
+  content: url("Imagens/esqueeto.png");
+  width: 400px;
+  transition: 1s;
+}
+
+#SecaoUm button {
+  padding: 20px;
+  border: none;
+  background-color: #303030;
+  color: white;
+  border-radius: 30px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#SecaoUm button:hover {
+  background-color: gray;
+  transition: 0.3s;
+}
+
+#SecaoDois {
+  background-color: lightgray;
+}
+
+#SecaoTres {
+  background-color: gray;
+}
+
+.secao {
+  height: 900px;
+  padding-top: 100px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.caixas {
+  background-color: white;
+  border-radius: 10px;
+  width: 250px;
+  padding: 10px;
+  display: inline-block;
+  margin: 10px;
+  box-shadow: 5px 5px 5px 5px #787373;
+}
+
+.caixas button {
+  background-color: #262626;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  width: 100px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.caixas button:hover {
+  background-color: grey;
+  transform: 0.3s;
+  transition: 0.5s;
+}
+
+.texto{
+ width: 500px;
+ padding: 10px;
+ display: block;
+ margin-top: 10px;
+ border-radius: 5px;
+  border: solid 1px #2b2b2b;
+}
+
+#formulario button{
+  display: block;
+  background-color:#2b2b2b ;
+  border: none;
+  color: white;
+  padding: 15px;
+  font-size: 20px;
+  width: 500px;
+  border-radius: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+ #formulario button:hover{
+   background-color: #4D4D4D;
+   transition: 0.5s;
+ }
+
+#formulario textarea{
+  width: 500px;
+  height: 100px;
+  margin-top: 10px;
+  border-radius: 10px;
+  font-size: 15px;
+  padding: 10px;
+  border: solid 1px #2b2b2b;
+}
+
+#link a{
+  font-weight: bold;
+  padding: 15px;
+}
