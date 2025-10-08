@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Página Inicial</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <div id="BarraTopo">
+      <button><a href="#SecaoUm">Início</a></button>
+      <button><a href="#SecaoDois">Projetos</a></button>
+      <button><a href="#SecaoTres">Contato</a></button>
+    </div>
+    <center>
+      <div id="SecaoUm" class="secao">
+        <img src="Imagens/Foto de perfil.png" />
+        <h1>Ramon</h1>
+        <h2>Aluno</h2>
+        <p>Bem vindo</p>
+        <button><a href="#SecaoDois">Ver Projetos</a></button>
+      </div>
+    </center>
+
+    <div id="SecaoDois">
+      <center class="secao">
+        <h2>Projetos</h2>
+        <p>Alguns trabalhos meus.</p>
+
+        <div class="caixas">
+          <h3>🌐Portifólio Pessoal</h3>
+          <p>Meu site de apresentação profissional</p>
+          <button><a>Ver projeto</a></button>
+        </div>
+
+        <div class="caixas">
+          <h3>🛒Loja virtual</h3>
+          <p>Protótipo de carrinho de compras de JavaScript</p>
+          <button><a>Ver projeto</a></button>
+        </div>
+
+        <div class="caixas">
+          <h3>📊Dashboard de Dados</h3>
+          <p>Painel interativo para visualização de gráficos</p>
+          <button><a>Ver projeto</a></button>
+        </div>
+      </center>
+    </div>
+    <div id="SecaoTres" class="secao">
+      <center>
+        <h2>Contato</h2>
+        <p>Entre em contato comigo preenchendo o formulário abaixo.</p>
+        <div id="formulario">
+          <form id="whatsappForm">
+          <input type="text" id="nome" class="texto" placeholder="Seu Nome" required>
+          <input type="email" id="email" class="texto" placeholder="Seu email" required>
+
+          <textarea placeholder="Digite sua mensagem" required id="mensagem"></textarea>
+
+          <button>Enviar no Whatsapp</button>
+
+          </form>
+
+          <h3>Me siga nas redes</h3>
+
+          <div id="link">
+          <a href="https://youtube.com/@lucasalves-yt6qx?si=9fnnHh3ZEjQvCSzI">Youtube</a>
+           <a href="https://www.instagram.com/lucas.prtti?igsh=dHF4azA4NDA3bWRh">Instagram</a>
+           <a href="https://www.facebook.com/share/1ZRFbLwQ8Y/">Facebook</a>
+        </div>
+      </center>
+    </div>
+    <script>
+
+    document.getElementById("whatsappForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const nome = document.getElementById("nome").value;
+    const email = document.getElementById("email").value;
+    const mensagem = document.getElementById("mensagem").value;
+    const texto = `Olá, meu nome é ${nome}) (${email}) e gostaria de falar: ${mensagem}`;
+    const url= `https://wa.me/5527998169324?text=${encodeURIComponent(texto)}`;
+
+    window.open(url, "_blank");
+  });
+    </script>
+  </body>
+</html>
